@@ -31,13 +31,43 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style type="text/css">
+    #slider { 
+    margin: 0px auto; 
+    position: relative; 
+    width: 100%; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+img {
+    height: auto;
+    max-width: 100%!important;
+}
+
+#slider > div { 
+    position: absolute;   
+}
+
+.navbar-default .nav li a {
+    color: black;
+}
+</style>
+
 </head>
 
 <body id="page-top" class="index">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
+
+
+
+
         <div class="container">
+
+
+
+           
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -46,8 +76,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img style="width:50%" src="img/isotipo-logo.png"><img src="img/tipografia-logo.png" style="width:50%" alt="My Image woman"></a>
+                <a class="navbar-brand page-scroll" href="#page-top" style="margin-top:-15px">
+                    
+
+                        <img class="icon-bar" style="width:25%" src="img/isotipo-logo.png">
+                        <img class="icon-bar" src="img/tipografia-logo.png" style="width:25%" alt="My Image woman">
+                    
+                </a>
             </div>
+
+
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -68,19 +106,45 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+
+
+
         </div>
         <!-- /.container-fluid -->
-    </nav>
 
+
+
+
+    
+</div>
+    </nav>
+<div id="slider" style="overflow:hidden;position:fixed">
+    <div>
+        <img src="img/portada-my-image-1.jpg" />
+    </div>
+    <div>
+        <img src="img/portada-my-image-3.jpg" />
+    </div>
+    <div>
+        <img src="img/portada-my-image-2.jpg" />
+    </div>
+    <div>
+        <img src="img/portada-my-image-4.jpg" />
+    </div>
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="intro-text">
+
+        <div style="width:100%;" > <!--z-index:2;position:absolute-->
+            <div class="intro-text" style="">
                 <div class="intro-lead-in">Welcome To Our Studio!</div>
                 <div class="intro-heading">It's Nice To Meet You</div>
                 <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
+
+
+
+        
     </header>
 
     <!-- Services Section -->
@@ -648,6 +712,19 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <script>
+    $("#slider > div:gt(0)").hide();
+    $("#slider").height($("#slider > div > img").height());
+    setInterval(function () {
+        $('#slider > div:first')
+          .fadeOut(1500)
+          .next()
+          .fadeIn(1500)
+          .end()
+          .appendTo('#slider');
+    }, 7000);
+</script>
 
 </body>
 
