@@ -1,60 +1,4 @@
-.clear { clear: both; }
-
-#top-menu {
-	//-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-	//-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-	//box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-	position: relative;
-	background: #25383b;
-	//background: #333;
-	//z-index:2;
-}
-
-	.home #top-menu {
-		z-index:1;
-	}
-	.container {
-		text-align: left;
-		margin: 0 auto;
-		width: 960px;
-		position: relative;
-		padding-bottom: 0px;
-	}
-	#top-menu .container { padding: 32px 0 0; }
-
-.tall {
-	//padding: 75px 0 25px 0 !important;
-	height:380px !important;
-}
-
-#top-area {
-	//padding: 30px 0 68px;
-	min-height:350px;
-}
-body #top-area {
-	//padding: 130px 0 141px;
-	padding: 0px;
-	//height:auto !important;
-	//z-index:-2;
-}
-
-#top-area, #pre-footer {
-	background-position: top center;
-	background-repeat: no-repeat;
-	-moz-background-size: 100% auto;
-	-webkit-background-size: 100% auto;
-	background-size: 100% auto;
-	background-color:#fff;
-	background-attachment: fixed;
-}
-
-
-logo-text {
-	padding:0 0 5px 0;
-}
-
-.mobile-text { display: none; }
-
+/*
 @media only screen and ( min-width: 768px ) {
 	.team-member:nth-child(3n) { margin-right: 0; }
 	.team-member:nth-child(3n+1) { clear: both; }
@@ -96,11 +40,11 @@ logo-text {
 	
 }
 
-
-/* iPad Portrait */
+*/
+/* iPad Portrait 
 @media only screen and (max-device-width: 1024px) {
 	
 	.home #top-area, .home #pre-footer {
 		height:425px;
 	}
-}
+}*/
