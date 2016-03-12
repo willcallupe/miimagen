@@ -107,7 +107,8 @@ header #isotipo {
 section {
 	padding-top:60px;
 	text-align: center;
-	margin: auto;
+	margin: auto 20px;
+
 }
 
 section .container {
@@ -118,6 +119,25 @@ img {
 	margin:auto;
 	
 }
+
+section#contact input, section#contact textarea, section#contact button {
+	border-radius: 0;
+	border: 0;
+}
+.form-group textarea {
+	height:132px;
+}
+section#contact button {
+	/*background: black;*/
+	/*background: transparent;;*/
+	background: rgba(0,0,0,0.9);
+	padding: 14px;
+	font-size: 1.5em;
+	color:white;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
 
 .portfolio-item {
     margin-bottom: 15px;
@@ -153,6 +173,10 @@ img {
 	header h1 {
 		font-size:4em;
 	}
+	section#contact button {
+		width: 120px;
+	}
+
 }
 
 
@@ -162,4 +186,28 @@ img {
 
 
 @media (min-width:1200px){
+}
+
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #fed136;
 }
